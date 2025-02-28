@@ -1,0 +1,151 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('https://www.tripsavvy.com/thmb/qoAzCJU621dFOdIF2YRYnBjJ_50=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/entrance-to-the-old-fort-santiago-intramuros-manila-luzon-philippines-southeast-asia-asia-515035601-591ae8a85f9b58f4c0be8a6e-092b16c0bac0438e983cfd0a8944107e.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #003f7f; /* Dark blue (Filipino flag) */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+    background-color: #bf0d0d; /* Red */
+}
+
+nav ul li {
+    margin: 0;
+    padding: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+}
+
+nav ul li a:hover {
+    background-color: #ffcc00; /* Yellow */
+    color: #333;
+    border-radius: 5px;
+}
+
+/* Sections */
+section {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* List Styles */
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #003f7f;
+    color: white;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Rizal Image Styling */
+.rizal-img {
+    display: block;
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Center Image Containers */
+.image-container {
+    text-align: center;
+}
+
+/* Gallery Grid Layout */
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+/* Gallery Items */
+.gallery-container figure {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Image and Video Styling */
+.gallery-container img,
+.gallery-container iframe {
+    width: 280px; /* Slightly larger */
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    border: 3px solid #ffcc00; /* Yellow border */
+}
+
+/* Caption Styling */
+figcaption {
+    font-size: 16px;
+    color: #000000;
+    margin-top: 10px;
+    font-style: italic;
+    text-align: center;
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 1200px) {
+    .gallery-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .gallery-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .gallery-container {
+        grid-template-columns: 1fr;
+    }
+}
